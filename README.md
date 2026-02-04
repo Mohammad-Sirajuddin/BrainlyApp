@@ -4,7 +4,7 @@ A simple web app to save and organize your favorite YouTube videos, Twitter post
 
 ## 🌐 Live Demo
 
-**Try the app now**: [https://brainly-app-bice.vercel.app](https://brainly-app.bice.vercel.app)
+**Try the app now**: [https://brainly-app-bice.vercel.app](https://brainly-app-bice.vercel.app)
 
 > **Note**: Backend is hosted on Render's free tier and may sleep after inactivity. If the app seems slow or unresponsive, click the backend link below to wake it up, then refresh the main app.
 
