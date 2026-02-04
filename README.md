@@ -4,13 +4,14 @@ A simple web app to save and organize your favorite YouTube videos, Twitter post
 
 ## 🌐 Live Demo
 
-**Try the app now**: [https://brainly-app.bice.vercel.app](https://brainly-app.bice.vercel.app)
+**Try the app now**: [https://brainly-app-bice.vercel.app](https://brainly-app.bice.vercel.app)
 
 > **Note**: Backend is hosted on Render's free tier and may sleep after inactivity. If the app seems slow or unresponsive, click the backend link below to wake it up, then refresh the main app.
 
 **Wake up backend**: [https://brainlyapp.onrender.com](https://brainlyapp.onrender.com)
 
 ### Test the Application:
+
 1. **Sign Up**: Create a new account or sign in
 2. **Add Content**: Try adding YouTube videos, Twitter posts, or documents
 3. **Filter**: Use the sidebar to filter by content type
@@ -32,22 +33,27 @@ A simple web app to save and organize your favorite YouTube videos, Twitter post
 ## How to Run
 
 ### You Need:
+
 - Node.js installed on your computer
 - A MongoDB Atlas account (free)
 
 ### Step 1: Download the Code
+
 ```bash
 git clone https://github.com/yourusername/second-brain.git
 cd second-brain
 ```
 
 ### Step 2: Install Everything
+
 ```bash
 npm run install-all
 ```
 
 ### Step 3: Setup Backend
+
 Create a `.env` file in the Backend folder:
+
 ```env
 MONGODB_USERNAME=your_username
 MONGODB_PASSWORD=your_password
@@ -58,11 +64,13 @@ PORT=3000
 ```
 
 ### Step 4: Start the App
+
 ```bash
 npm run dev
 ```
 
 ### Step 5: Open the App
+
 Go to: http://localhost:5173
 
 ## How to Use
@@ -86,6 +94,7 @@ Go to: http://localhost:5173
 ## Need Help?
 
 If something doesn't work:
+
 1. Make sure Node.js is installed
 2. Check that your MongoDB connection string is correct
 3. Make sure both frontend and backend are running
@@ -93,6 +102,7 @@ If something doesn't work:
 ## Want to Deploy?
 
 ### Frontend (Vercel)
+
 1. Push your code to GitHub
 2. Connect your GitHub repo to Vercel
 3. Add `vercel.json` file for React Router support:
@@ -109,6 +119,7 @@ If something doesn't work:
 4. Deploy automatically
 
 ### Backend (Render)
+
 1. Push your code to GitHub
 2. Connect your GitHub repo to Render
 3. Set Root Directory to `Backend`
@@ -123,6 +134,7 @@ If something doesn't work:
 5. Deploy automatically
 
 ### Database
+
 - **MongoDB Atlas**: Free tier available (already cloud-based)
 
 ---
