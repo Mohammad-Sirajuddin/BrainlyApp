@@ -1,14 +1,10 @@
 import express from "express";
 import cors from "cors";
 import routes from "./routes/routes.js";
-import * as nodeDns from "node:dns";
 import dotenv from "dotenv";
 
 // Load environment variables
 dotenv.config();
-
-// Use the alias 'nodeDns' to set the servers
-nodeDns.setServers(["8.8.8.8", "8.8.4.4"]);
 
 const app = express();
 
