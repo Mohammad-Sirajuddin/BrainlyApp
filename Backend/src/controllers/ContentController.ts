@@ -137,7 +137,7 @@ async function shareContent(req: Request, res: Response) {
 
     // Create the shareable URL
     // Note: In production, this should use the actual domain
-    const ShareableLink = `http://localhost:5173/shared/${shareToken}`;
+    const ShareableLink = `https://brainly-app-bice.vercel.app/shared/${shareToken}`;
     
     return res.status(200).json({
       message: "Shareable Link Generated Successfully!",
