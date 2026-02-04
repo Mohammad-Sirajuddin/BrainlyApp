@@ -2,6 +2,16 @@
 
 A simple web app to save and organize your favorite YouTube videos, Twitter posts, and documents. Share your collection with friends!
 
+## 🌐 Live Demo
+
+**Try the app now**: [https://brainly-app.bice.vercel.app]
+
+### Test the Application:
+1. **Sign Up**: Create a new account or sign in
+2. **Add Content**: Try adding YouTube videos, Twitter posts, or documents
+3. **Filter**: Use the sidebar to filter by content type
+4. **Share**: Generate a shareable link to test the sharing feature
+
 ## What does it do?
 
 - Save YouTube videos, Twitter posts, and documents
@@ -11,9 +21,9 @@ A simple web app to save and organize your favorite YouTube videos, Twitter post
 
 ## Technologies Used
 
-- **Frontend**: React + TypeScript + Tailwind CSS
-- **Backend**: Node.js + Express + TypeScript
-- **Database**: MongoDB
+- **Frontend**: React + TypeScript + Tailwind CSS (Deployed on Vercel)
+- **Backend**: Node.js + Express + TypeScript (Deployed on Render)
+- **Database**: MongoDB Atlas
 
 ## How to Run
 
@@ -78,9 +88,38 @@ If something doesn't work:
 
 ## Want to Deploy?
 
-- **Frontend**: Use Vercel or Netlify
-- **Backend**: Use Railway or Heroku
-- **Database**: MongoDB Atlas (already cloud-based)
+### Frontend (Vercel)
+1. Push your code to GitHub
+2. Connect your GitHub repo to Vercel
+3. Add `vercel.json` file for React Router support:
+   ```json
+   {
+     "rewrites": [
+       {
+         "source": "/(.*)",
+         "destination": "/index.html"
+       }
+     ]
+   }
+   ```
+4. Deploy automatically
+
+### Backend (Render)
+1. Push your code to GitHub
+2. Connect your GitHub repo to Render
+3. Set Root Directory to `Backend`
+4. Add environment variables:
+   ```
+   JWT_SECRET=your_secret_key
+   MONGODB_USERNAME=your_username
+   MONGODB_PASSWORD=your_password
+   MONGODB_CLUSTER=your_cluster_url
+   MONGODB_DATABASE=your_database_name
+   ```
+5. Deploy automatically
+
+### Database
+- **MongoDB Atlas**: Free tier available (already cloud-based)
 
 ---
 
