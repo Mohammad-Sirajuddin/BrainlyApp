@@ -1,4 +1,3 @@
-import { Types } from "mongoose";
 import * as z from "zod";
 const usernameSchemaZod = z.string().min(3).max(10);
 const passwordSchemaZod = z
@@ -20,7 +19,7 @@ const userSchemaZod = z.object({
 
 const contentSchemaZod = z.object({
   types: z.enum(["document", "Twitter", "youtube", "link"]),
-  link: z.url({ message: "Invalid URL" }),
+  link: z.string().url({ message: "Invalid URL" }),
   title: z.string(),
   tags: z.string(),
 });

@@ -11,15 +11,11 @@ dotenv.config();
 nodeDns.setServers(["8.8.8.8", "8.8.4.4"]);
 
 const app = express();
-const PORT = process.env.PORT || 3000;
 
 // Configure CORS to allow requests from your frontend
 app.use(
   cors({
-    origin: [
-      "http://localhost:5173", // Local development
-      "https://your-frontend-domain.vercel.app", // Replace with your actual frontend URL
-    ],
+    origin: "http://localhost:5173", // Your frontend URL
     credentials: true,
   }),
 );
@@ -27,20 +23,14 @@ app.use(
 // Add request logging middleware
 app.use((req, res, next) => {
   console.log(`${new Date().toISOString()} - ${req.method} ${req.url}`);
-  console.log("Headers:", req.headers);
-  console.log("Body:", req.body);
   next();
 });
 
 app.use(express.json());
 
-// Debug route to test
-app.get("/test", (req, res) => {
-  res.json({ message: "Backend is working!" });
-});
-
 app.use("/api/v1", routes);
 
-app.listen(PORT, () => {
-  console.log(`Server Running on port ${PORT}!`);
+app.listen(3000, () => {
+  console.log("Server Running on port 3000!");
 });
+
