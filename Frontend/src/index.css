@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #e0e7ff;
+  --color-primary-hover: #c9cfe5;
+  --color-secondary: #5046e4;
+  --color-secondary-hover: #3931a2;
+  --color-inline: #5851c2;
+}
+
+/* Masonry CSS */
+.masonry-column {
+  padding-left: 4px; /* Reduced to 4px for minimal gap */
+  background-clip: padding-box;
+  width: 100% !important;
+}
+
+.masonry-column:first-child {
+  padding-left: 0;
+}
