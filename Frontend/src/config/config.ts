@@ -1,1 +1,1 @@
-export const BackendURL = "http://localhost:3000/api/v1";
+export const BackendURL = "https://brainlyapp.onrender.com/api/v1";
