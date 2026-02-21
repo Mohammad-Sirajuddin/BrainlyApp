@@ -9,6 +9,9 @@ A simple web app to save and organize your favorite YouTube videos, Twitter post
 > **Note**: Backend is hosted on Render's free tier and may sleep after inactivity. If the app seems slow or unresponsive, click the backend link below to wake it up, then refresh the main app.
 
 **Wake up backend**: [https://brainlyapp.onrender.com](https://brainlyapp.onrender.com)
+Test Credentials:-
+Username- Siraj
+Password- Siraj@123
 
 ### Test the Application:
 
